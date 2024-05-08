@@ -1,0 +1,15 @@
+{
+    "name": null,
+    "input_variables": [
+        "input_country"
+    ],
+    "input_types": {},
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nProvide the capital city of the given country.\n\nCountry: ```{input_country}```\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}

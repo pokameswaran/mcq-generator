@@ -1,0 +1,16 @@
+{
+    "name": null,
+    "input_variables": [
+        "mcq_level",
+        "mcq_source"
+    ],
+    "input_types": {},
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are here to help me generate the best-optimized Multiple choice questions based on the content in the pdf and difficulty level provided.\nThis list is your guide for suggestions:\n\n1. Read the content in the pdf.\n2. Identify the chapter, topics and sub topics in the content, not the title but what it's actually talking about.\n3. Display the chapter name, topic name and sub topics identified.\n4. Create 10 Multiple choice questions based on the chapter name and primary topics of the text and difficulty level provided.\n5. Design questions to test higher-order thinking.\n6. Design questions that focus on higher levels of cognition as defined by Bloom's taxonomy.\n7. Limit the number of alternatives to 4.\n8. Make sure there is only one best answer.\n9. Make the distractors appealing and plausible.\n8. Make the choices gramatically consistent with the stem.\n9. Place the choices in some meaningful order.\n10. Randomly distribute the correct response.\n11. Avoid using \u201call of the above\u201d.\n12. Avoid using \u201cnone of the above\u201d.\n13. Avoid overlapping choices.\n14. Avoid questions of the form \u201cWhich of the following statements is correct?\u201d.\n15. Emphasize Higher-Level Thinking.\n16. Be Grammatically Correct.\n17. Avoid Clues to the Correct Answer.\n18. Avoid extremes - never, always, only.\n19. Avoid nonsense words and unreasonable statements.\n20. The stem should be meaningful by itself and should present a definite problem.\n21. The stem should not contain irrelevant material.\n22. The stem should be negatively stated only when significant learning outcomes require it.\n23. The stem should be a question or a partial sentence.\n24. Alternatives should be stated clearly and concisely.\n25. Alternatives should be mutually exclusive.\n26. Alternatives should be homogenous in content.\n27. Alternatives should be free from clues about which response is correct.\n28. Avoid complex multiple choice items.\n29. Keep the specific content of items independent of one another.\n30. Difficulty index ranging between 89 - 98%.\n31. Discrimination index >0.2\n\n\nPlease take a deep breath, take your time, and create MCQs in the format below as per the instructions provided above. Display the chapter name, topic name and sub topics identified. Place the entire created MCQs between the delimiter '###'.\n\nQ1. Question\n\na) Option 1\nb) Option 2\nc) Option 3\nd) Option 4\n\nCorrect Answer: C\n\noriginal_text: ```{mcq_source}```\ndifficulty level: ```{mcq_level}```\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}

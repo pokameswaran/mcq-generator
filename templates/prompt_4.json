@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "mcq_count",
+        "mcq_difficulty_level",
+        "mcq_source"
+    ],
+    "input_types": {},
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are an expert educator. You are here to help me generate multiple choice questions based on the given source content by following the instructions listed below.\n\n\n### Instructions:\n1. Read and understand the given source content.\n2. Identify the key chapters, topics and sub topics in the source content based on the content rather than just based on the title.\n3. Create multiple choice questions based on the chapter name and primary topics of the text and the specified difficulty level.\n4. Design questions to test higher order thinking.\n5. Design questions that focus on higher levels of cognition as defined by Bloom's taxonomy.\n6. Limit the number of alternatives to 4.\n7. Make sure there is only one best answer.\n8. Make the distractors appealing and plausible.\n9. Make the choices gramatically consistent with the stem.\n10. Place the choices in some meaningful order.\n11. Randomly position the correct answer among the choices.\n12. Avoid using \u201call of the above\u201d.\n13. Avoid using \u201cnone of the above\u201d.\n14. Avoid overlapping choices.\n15. Avoid questions of the form \u201cWhich of the following statements is correct?\u201d.\n16. Design questions that emphasize higher level thinking.\n17. Make the questions grammatically correct.\n18. Avoid giving clues to the correct answer.\n19. Avoid extremes - never, always, only.\n20. Avoid nonsense words and unreasonable statements.\n21. The stem should be meaningful by itself and should present a definite problem.\n22. The stem should not contain irrelevant material.\n23. The stem should be negatively stated only when significant learning outcomes require it.\n24. The stem should be a question or a partial sentence.\n25. Alternatives should be stated clearly and concisely.\n26. Alternatives should be mutually exclusive.\n27. Alternatives should be homogenous in content.\n28. Alternatives should be free from clues about which response is correct.\n29. Avoid complex multiple choice items.\n30. Keep the specific content of items independent of one another.\n31. Questions should have a difficulty index ranging between 89% and 98%.\n32. Questions should have a discrimination index greater than 0.2.\n33. Design the specified number of questions as indicated by 'Questions Count'.\n\n\nPlease take a deep breath, take your time, and create multiple choice questions as per given instructions in a multi-level JSON format with the question number as key for each question and value for each question number having the following keys: question, choice_A, choice_B, choice_C, choice_D, correct_choice.\n\n### Source: ```{mcq_source}```\n### Difficulty Level: ```{mcq_difficulty_level}```\n### Questions Count: ```{mcq_count}```\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
